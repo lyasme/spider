@@ -7,5 +7,8 @@ def download(url):
     data = urllib2.urlopen(request).read() #打开请求抓取数据
     return data
 
+def download1(url):
+    return urllib2.urlopen(url).read() #没有伪装的usersagent的
+
 url="http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E6%B7%B1%E5%9C%B3&kw=java&p=1&isadv=0" #urlopen只能处理http.不可以处理https
 print download(url)
