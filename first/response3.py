@@ -1,4 +1,4 @@
-#coding:utf-8  #urllib.request == urllib2
+#coding:utf-8  #urllib== urllib2
 import urllib2  #python2
 
 
