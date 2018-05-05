@@ -1,0 +1,6 @@
+#LWP-Cookies-2.0
+Set-Cookie3: _r01_=1; path="/"; domain=".renren.com"; path_spec; domain_dot; expires="2019-04-30 06:35:01Z"; version=0
+Set-Cookie3: anonymid=jgt0kajgo0t7eq; path="/"; domain=".renren.com"; path_spec; domain_dot; expires="2023-05-04 06:35:00Z"; version=0
+Set-Cookie3: depovince=GW; path="/"; domain=".renren.com"; path_spec; domain_dot; expires="2018-05-08 06:35:01Z"; version=0
+Set-Cookie3: jebecookies="1e220510-e765-490f-b662-de814545f519|||||"; path="/"; domain=".renren.com"; path_spec; domain_dot; discard; version=0
+Set-Cookie3: JSESSIONID=abcP3Elh5fp6y6rzSaVmw; path="/"; domain="www.renren.com"; path_spec; discard; version=0
