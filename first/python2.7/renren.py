@@ -4,8 +4,11 @@ import urllib2
 import cookielib
 
 cookie = cookielib.CookieJar() #创建一个对象存储cookie
-cookie_hander = urllib2.HTTPCookieProcessor(cookie)
+
+cookie_hander = urllib2.HTTPCookieProcessor(cookie) #创建一个链接对象
+
 opener = urllib2.build_opener(cookie_hander) #打开浏览器，使用cookie
+
 opener.add_handlers = [("User-Agent","Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; 360SE" )] #增加一个浏览器模拟
 
 loginurl = "http://www.renren.com/PLogin.do"
