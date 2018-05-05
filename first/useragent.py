@@ -4,7 +4,10 @@ import urllib2
 def download(url):
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11"}
     request = urllib2.Request(url,headers=headers) #发起请求
-    data = urllib2.urlopen(request).read() #打开请求抓取数据
+    request.add_header("Connection","keep-alive")
+    response = urllib2.urlopen(request) #打开请求抓取数据
+    data = response.read()
+    print response.code
     return data
 
 def download1(url):
