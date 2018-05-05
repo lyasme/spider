@@ -37,3 +37,11 @@ print html.xpath("//li") #输出 所有节点
 print html.xpath("//li[1]/a/@href")#输出 第一个
 print html.xpath("//li[last()]/a/@href")#输出 最后一个
 print html.xpath("//li[last()-1]/a/@href")#输出 倒数第二个节点
+
+
+print "****9*8***"
+print html.xpath("//*[@text=\"2\"]/aa//@href") #选text=2的元素
+print html.xpath("//*[@text=\"3\"]/@class")
+print html.xpath("//*[@class=\"nimei\"]")
+print html.xpath("//li/a/text()") #取<>内容
+print html.xpath("//li[3]/a/span/text()") #取span里面的内容
