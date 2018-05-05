@@ -25,4 +25,15 @@ print "****5*8***"
 print html.xpath("//li/a/@href=\"link2.html\"") #输出判断的是否有一个节点
 
 
+print "****6*8***"
+print html.xpath("//li//span/@class") #输出 所有 li里面的所有span里面的class内容
 
+
+print "****7*8***"
+print html.xpath("//li/a//@class") #输出 所有 li的所有节点内部节点a包含的class
+
+print "****8*8***"
+print html.xpath("//li") #输出 所有节点
+print html.xpath("//li[1]/a/@href")#输出 第一个
+print html.xpath("//li[last()]/a/@href")#输出 最后一个
+print html.xpath("//li[last()-1]/a/@href")#输出 倒数第二个节点
