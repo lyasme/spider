@@ -36,6 +36,7 @@ mytree = lxml.etree.HTML(html)
 print mytree.xpath("//title/text()")
 print mytree.xpath("//*[@id=\"useful\"]/li/text()")
 print mytree.xpath("//*[@id=\"useless\"]/li/text()")
+
 print mytree.xpath("//*[@id=\"url\"]/a/@href")
 print mytree.xpath("//*[@id=\"url\"]/a/text()")
 print mytree.xpath("//*[@id=\"url\"]/a/@title")
