@@ -11,7 +11,6 @@ def  download(url):
     data = urllib2.urlopen(request).read() #打开请求，抓取数据
     mytree = lxml.etree.HTML(data)
 
-
     mystr = (mytree.xpath("//*[@class=\"rt\"]/text()"))[0].strip() #抓取职位个数
     print mystr
 
